@@ -1,0 +1,39 @@
+# Virtual environments (DO NOT PUSH THESE)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs / temp
+*.log
+logs/
+tmp/
+*.tmp
+
+# Large data/models (if any)
+datasets/
+checkpoints/
+*.mp4
+*.mkv
+*.avi
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.h5
+*.pt
+*.pth
+*.onnx

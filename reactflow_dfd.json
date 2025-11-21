@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "webcam",
+      "type": "input",
+      "data": {
+        "label": "Webcam Input"
+      },
+      "position": {
+        "x": 0,
+        "y": 120
+      }
+    },
+    {
+      "id": "capture",
+      "data": {
+        "label": "Capture Frame"
+      },
+      "position": {
+        "x": 180,
+        "y": 120
+      }
+    },
+    {
+      "id": "detect",
+      "data": {
+        "label": "Face + Eye Detection"
+      },
+      "position": {
+        "x": 360,
+        "y": 120
+      }
+    },
+    {
+      "id": "focus",
+      "data": {
+        "label": "Focus Analysis"
+      },
+      "position": {
+        "x": 580,
+        "y": 100
+      }
+    },
+    {
+      "id": "store",
+      "data": {
+        "label": "Store Focus Data"
+      },
+      "position": {
+        "x": 780,
+        "y": 120
+      }
+    },
+    {
+      "id": "report",
+      "type": "output",
+      "data": {
+        "label": "Generate Report"
+      },
+      "position": {
+        "x": 980,
+        "y": 120
+      }
+    },
+    {
+      "id": "sleepy",
+      "data": {
+        "label": "Sleepy (EAR\u2193)"
+      },
+      "position": {
+        "x": 580,
+        "y": 10
+      }
+    },
+    {
+      "id": "distract",
+      "data": {
+        "label": "Distracted (Yaw\u2191)"
+      },
+      "position": {
+        "x": 580,
+        "y": 200
+      }
+    },
+    {
+      "id": "focused",
+      "data": {
+        "label": "Focused"
+      },
+      "position": {
+        "x": 580,
+        "y": 300
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "webcam",
+      "target": "capture",
+      "animated": true
+    },
+    {
+      "id": "e2",
+      "source": "capture",
+      "target": "detect",
+      "animated": true
+    },
+    {
+      "id": "e3",
+      "source": "detect",
+      "target": "focus",
+      "animated": true
+    },
+    {
+      "id": "e4",
+      "source": "focus",
+      "target": "store",
+      "animated": true
+    },
+    {
+      "id": "e5",
+      "source": "store",
+      "target": "report",
+      "animated": true
+    },
+    {
+      "id": "e6",
+      "source": "focus",
+      "target": "sleepy",
+      "label": "EAR<th",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e7",
+      "source": "focus",
+      "target": "distract",
+      "label": "Yaw>th",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e8",
+      "source": "focus",
+      "target": "focused",
+      "label": "else",
+      "type": "smoothstep"
+    }
+  ]
+}

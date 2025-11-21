@@ -1,0 +1,23 @@
+
+AI FOCUS MONITOR - SESSION SUMMARY
+=================================
+
+Session Duration: 38.5 seconds (0.6 minutes)
+Total Frames: 1131
+Overall Focus Score: 64.5%
+
+STATUS DISTRIBUTION:
+  Focused     :  64.5% (  24.8s)
+  Sleepy      :  17.3% (   6.7s)
+  Distracted  :   9.6% (   3.7s)
+  Blinking    :   8.5% (   3.3s)
+
+AVERAGE METRICS:
+  Eye Aspect Ratio (EAR): 0.234
+  Mouth Aspect Ratio (MAR): 0.005
+  Head Yaw Ratio: 1.23
+  Head Pitch Ratio: 0.59
+
+ANALYSIS:
+  Good focus with some minor distractions.
+  Consider taking breaks or ensuring adequate sleep.
