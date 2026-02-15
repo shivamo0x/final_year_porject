@@ -36,7 +36,7 @@ An intelligent, real-time focus monitoring system that uses computer vision to t
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-focus-monitor.git
+git clone https://github.com/shivamo0x/ai-focus-monitor.git
 cd ai-focus-monitor
 
 # Create virtual environment (recommended)
